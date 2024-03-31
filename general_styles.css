@@ -38,7 +38,12 @@ html {
 }
 
 .container {
-    max-width: 144rem;
+    /* max-width: 144rem; */
+    /* margin: auto; */
+    flex-direction: column;
+    margin-block: 2rem;
+    margin-inline: auto;
+    max-width: 85%;
 }
 
 .flex {
