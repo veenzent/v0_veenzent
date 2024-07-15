@@ -21,6 +21,8 @@
     
     <!-- github calendar css -->
     <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github calender CSS theme -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
     <!-- github activity css -->  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
     <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
@@ -216,7 +218,11 @@
                         <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
                         
                         <div id="github-graph" class="github-graph">
-
+                            <!-- container for github calender -->
+                            <div class="calender">
+                                <!-- loading stuff -->
+                                 Loading data ...
+                            </div>
                         </div><!--//github-graph-->
 
                         <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.        
@@ -428,7 +434,16 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script type="text/javascript" src="assets/js/main.js"></script>    
+
+    <!-- github calender -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <script>
+        // GitHubCalendar(".calendar", "veenzent");
+        // or enable responsive functionality
+        GitHubCalendar(".calendar", "veenzent", { responsive: true });
+    </script>
 </body>
 </html> 
 
