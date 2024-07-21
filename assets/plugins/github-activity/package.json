@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/caseyscarborough/github-activity",
   "dependencies": {
+    "github-activity-feed": "^0.3.0",
     "mustache": "^4.2.0",
     "octicons": "^4.4.0"
   },
