@@ -4,7 +4,7 @@ import CodeSnippetsBackground from "../ui/CodeSnippetsBackground";
 
 export default function Hero() {
     return (
-        <section className="py-32 relative overflow-hidden">
+        <section className="py-28 relative overflow-hidden">
             <CodeSnippetsBackground />
             <div className="container mx-auto max-w-3xl">
                 <div className="relative z-10">

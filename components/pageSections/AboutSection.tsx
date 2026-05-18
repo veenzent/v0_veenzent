@@ -16,22 +16,11 @@ export default function AboutSection() {
 
     return (
         <section className="py-24">
-            <div
-                className="container mx-auto max-w-5xl"
-                style={{
-                    display: "grid",
-                    gridTemplateColumns: "200px 1fr",
-                    gap: "4rem",
-                    alignItems: "start",
-                }}
-            >
-                <h2
-                    className="text-sm font-semibold uppercase text-(--foreground)"
-                    style={{ paddingTop: "0.25rem" }}
-                >
+            <div className="container mx-auto max-w-5xl flex flex-col md:grid md:grid-cols-[200px_1fr] gap-12 md:gap-16 md:items-start">
+                <h2 className="text-sm font-semibold uppercase text-(--foreground)">
                     About
                 </h2>
-                <div className="grid md:grid-cols-2 gap-16 items-start">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
                     <img
                         // src={VeenzentPng.src}
                         src={Cent.src}

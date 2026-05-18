@@ -60,11 +60,11 @@ export default function Notes() {
                 </div>
             </div>
 
-            <div className="container mx-auto max-w-5xl relative z-10" style={{ display: 'grid', gridTemplateColumns: '200px 1fr', gap: '4rem', alignItems: 'start' }}>
-                <h2 className="text-sm font-semibold uppercase text-(--foreground)" style={{ paddingTop: '0.25rem' }}>
+            <div className="container mx-auto max-w-5xl relative z-10 flex flex-col md:grid md:grid-cols-[200px_1fr] gap-12 md:gap-16 md:items-start">
+                <h2 className="text-sm font-semibold uppercase text-(--foreground)">
                     Notes & Writing
                 </h2>
-                <div className="mt-8 flex flex-col">
+                <div className="flex flex-col">
                     {notes.map((n) => (
                         <a
                             key={n.title}
