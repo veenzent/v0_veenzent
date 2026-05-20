@@ -4,17 +4,17 @@ const notes: Note[] = [
     {
         title: "Git Bash & GitHub for Beginners.",
         date: "Dec 1, 2025",
-        link: "https://veenzent.hashnode.dev/git-bash-and-github-for-beginners"
+        link: "https://veenzent.hashnode.dev/git-bash-and-github-for-beginners",
     },
     {
         title: "Don't Make Me a Hypocrite: The Danger of Performative Prayer.",
         date: "Apr 26, 2023",
-        link: "https://veenzent.hashnode.dev/dont-make-me-a-hypocrite-the-danger-of-performative-prayer"
+        link: "https://veenzent.hashnode.dev/dont-make-me-a-hypocrite-the-danger-of-performative-prayer",
     },
     {
         title: "What is Web 3.0?",
         date: "Mar 16, 2023",
-        link: "https://veenzent.hashnode.dev/what-is-web-3"
+        link: "https://veenzent.hashnode.dev/what-is-web-3",
     },
 ];
 

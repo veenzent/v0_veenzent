@@ -24,10 +24,7 @@ export default function ContactFooter() {
                     </a>
                 </div>
                 <div className="mt-32 pt-8 border-t border-(--border) flex flex-col sm:flex-row sm:justify-between sm:items-center gap-6">
-                    <p className="text-sm text-(--muted-foreground)">
-                        © 2026 veenzent. All rights reserved.
-                    </p>
-                    <div className="flex justify-between px-4">
+                    <div className="flex items-center gap-6 px-4">
                         {/* GitHub */}
                         <a
                             href="https://github.com/veenzent"
@@ -95,6 +92,9 @@ export default function ContactFooter() {
                             </svg>
                         </a>
                     </div>
+                    <p className="text-sm text-(--muted-foreground)">
+                        © 2026 veenzent. All rights reserved.
+                    </p>
                 </div>
             </div>
         </section>

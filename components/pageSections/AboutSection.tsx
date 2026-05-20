@@ -1,18 +1,9 @@
 import ComplimentRotator from "@/components/pageSections/ComplimentRotator";
 import VeenzentPng from "@/assets/veenzent.png";
 import Cent from "@/assets/cent-edited.png";
+import { unpaidCompliments } from "@/data/unpaidCompliments";
 
 export default function AboutSection() {
-    const unpaidCompliments = [
-        {
-            text: "Vincent was incredibly effective at quickly understanding the problem space and delivering high-quality backend architecture.",
-            author: "Anonymous Nicole, Product Lead",
-        },
-        {
-            text: "His focus on reliability and maintainability saved us weeks of technical debt down the road.",
-            author: "Anonymous Ahmed, Engineering Manager",
-        },
-    ];
 
     return (
         <section className="py-24">
