@@ -1,18 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import Layout from "@/components/layout/Layout";
-import Script from "next/script";
 import React from "react";
 import projects from "@/data/projects";
 import ProjectCard from "@/components/pageSections/ProjectCard";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
-
 export default function Projects() {
 	return (
-		<div className={`${geistSans.className} ${geistMono.className} font-sans`}>
-			<Script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js" strategy="afterInteractive" />
-
 			<Layout>
 				<section className="py-10 md:py-24">
 					<div className="container mx-auto px-5 max-w-5xl">
@@ -56,7 +48,6 @@ export default function Projects() {
 					</div>
 				</section>
 			</Layout>
-		</div>
 	);
 }
 

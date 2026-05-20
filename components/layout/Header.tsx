@@ -72,13 +72,19 @@ export default function Header() {
                         <NavLink href="/about" active={pathname === "/about"}>
                             About
                         </NavLink>
-                        <NavLink href="/projects" active={pathname === "/projects"}>
+                        <NavLink
+                            href="/projects"
+                            active={pathname === "/projects"}
+                        >
                             Projects
                         </NavLink>
-                        <NavLink href="/blog" active={pathname === "/blog"}>
+                        <NavLink href="/blogs" active={pathname === "/blogs"}>
                             Blogs
                         </NavLink>
-                        <NavLink href="/contact" active={pathname === "/contact"}>
+                        <NavLink
+                            href="/contact"
+                            active={pathname === "/contact"}
+                        >
                             Contacts
                         </NavLink>
                     </nav>
@@ -96,13 +102,19 @@ export default function Header() {
                         <NavLink href="/about" active={pathname === "/about"}>
                             About
                         </NavLink>
-                        <NavLink href="/projects" active={pathname === "/projects"}>
+                        <NavLink
+                            href="/projects"
+                            active={pathname === "/projects"}
+                        >
                             Projects
                         </NavLink>
-                        <NavLink href="/blog" active={pathname === "/blog"}>
+                        <NavLink href="/blogs" active={pathname === "/blogs"}>
                             Blogs
                         </NavLink>
-                        <NavLink href="/contact" active={pathname === "/contact"}>
+                        <NavLink
+                            href="/contact"
+                            active={pathname === "/contact"}
+                        >
                             Contacts
                         </NavLink>
                     </nav>
