@@ -9,12 +9,22 @@ export default function Header() {
             <div className="container mx-auto px-5 md:px-8 max-w-5xl">
                 {/* Mobile: Logo and icons */}
                 <div className="md:hidden flex justify-between items-center mb-6">
-                    <div className="font-mono text-(--foreground) text-lg font-semibold tracking-tight">
+                    <a
+                        href="/"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            if (typeof window !== "undefined") window.location.href = "/";
+                        }}
+                        className="font-mono text-(--foreground) text-lg font-semibold tracking-tight cursor-pointer"
+                        aria-label="Home"
+                    >
                         &lt;veenzent/&gt;
-                    </div>
+                    </a>
                     <div className="flex gap-5">
                         <a
                             href="https://github.com/veenzent"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="flex items-center justify-center w-5 h-5 text-(--foreground)"
                             aria-label="GitHub"
                         >
@@ -42,6 +52,8 @@ export default function Header() {
                         </a>
                         <a
                             href="https://veenzent.cv"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="flex items-center justify-center w-5 h-5 text-(--foreground)"
                             aria-label="Resume"
                         >
@@ -82,8 +94,8 @@ export default function Header() {
                             Blogs
                         </NavLink>
                         <NavLink
-                            href="/contact"
-                            active={pathname === "/contact"}
+                            href="/contacts"
+                            active={pathname === "/contacts"}
                         >
                             Contacts
                         </NavLink>
@@ -92,9 +104,17 @@ export default function Header() {
 
                 {/* Desktop: Centered layout */}
                 <div className="hidden md:flex justify-between items-center gap-8">
-                    <div className="font-mono text-(--foreground) text-lg font-semibold tracking-tight">
+                    <a
+                        href="/"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            if (typeof window !== "undefined") window.location.href = "/";
+                        }}
+                        className="font-mono text-(--foreground) text-lg font-semibold tracking-tight cursor-pointer"
+                        aria-label="Home"
+                    >
                         &lt;veenzent/&gt;
-                    </div>
+                    </a>
                     <nav className="flex gap-8">
                         <NavLink href="/" active={pathname === "/"}>
                             Home
@@ -112,8 +132,8 @@ export default function Header() {
                             Blogs
                         </NavLink>
                         <NavLink
-                            href="/contact"
-                            active={pathname === "/contact"}
+                            href="/contacts"
+                            active={pathname === "/contacts"}
                         >
                             Contacts
                         </NavLink>
@@ -121,6 +141,8 @@ export default function Header() {
                     <div className="flex items-center gap-6">
                         <a
                             href="https://github.com/veenzent"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="flex items-center gap-2 text-(--muted-foreground) text-sm transition-colors hover:text-(--foreground)"
                         >
                             <svg
@@ -148,6 +170,8 @@ export default function Header() {
                         </a>
                         <a
                             href="https://veenzent.cv"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-(--muted-foreground) text-sm transition-colors hover:text-(--foreground)"
                         >
                             Resume

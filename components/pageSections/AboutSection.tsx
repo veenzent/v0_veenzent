@@ -50,7 +50,7 @@ export default function AboutSection() {
             <div className="mt-8 pt-6 border-t border-dashed border-(--border) flex justify-center">
                 <div className="w-full max-w-4xl">
                     <h3 className="text-xs font-semibold uppercase tracking-wider mb-4 text-(--foreground) text-center">
-                        Unpaid Compliments
+                        Client Notes
                     </h3>
                     <ComplimentRotator
                         compliments={unpaidCompliments}

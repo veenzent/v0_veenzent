@@ -1,8 +1,10 @@
 import Badge from "../ui/Badge";
 import Button from "../ui/Button";
+import { useRouter } from "next/router";
 import CodeSnippetsBackground from "../ui/CodeSnippetsBackground";
 
 export default function Hero() {
+    const router = useRouter();
     return (
         <section className="py-28 relative overflow-hidden">
             <CodeSnippetsBackground />
@@ -20,8 +22,20 @@ export default function Hero() {
                         turning complex systems into calm, maintainable code.
                     </p>
                     <div className="mt-8 flex gap-4">
-                        <Button variant="primary" className="cursor-pointer">View Projects</Button>
-                        <Button variant="outline" className="cursor-pointer">View Blog Posts</Button>
+                        <Button
+                            variant="primary"
+                            className="cursor-pointer"
+                            onClick={() => router.push("/projects")}
+                        >
+                            View Projects
+                        </Button>
+                        <Button
+                            variant="outline"
+                            className="cursor-pointer"
+                            onClick={() => router.push("/blogs")}
+                        >
+                            View Blog Posts
+                        </Button>
                     </div>
                 </div>
             </div>

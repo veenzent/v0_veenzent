@@ -35,18 +35,6 @@ export default function Projects() {
 					</div>
 				</section>
 
-				<section className="py-12 md:py-24 border-t border-(--border)">
-					<div className="container mx-auto px-5 max-w-5xl">
-						<div style={{ maxWidth: 600 }}>
-							<h2 className="text-3xl font-medium leading-tight mb-6 text-(--foreground)">Let's build something exceptional.</h2>
-							<p className="text-lg text-(--muted-foreground) mb-8">Got a wild idea, a startup brief, or simply want to say hi? I'm all ears — just maybe not the caffeine kind.</p>
-							<div className="flex gap-4">
-								<a href="#" className="inline-flex items-center justify-center px-6 py-3 rounded bg-(--foreground) text-(--primary-foreground) border border-(--foreground) text-sm font-medium">Get in Touch</a>
-								<a href="#" className="inline-flex items-center justify-center px-6 py-3 rounded bg-transparent text-(--foreground) border border-(--border) text-sm font-medium">Access Project Portal</a>
-							</div>
-						</div>
-					</div>
-				</section>
 			</Layout>
 	);
 }

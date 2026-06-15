@@ -11,18 +11,21 @@ export const projects: Project[] = [
         description:
             "Shorten long URLs into sleek, memorable (customizable) links that are easy to share and track.",
         image: litelink.src,
+        link: "https://litelink.vercel.app/",
     },
     {
         title: "BizAi",
         description:
             "A conversational assistant focused on business information and registration trends in Nigeria.",
         image: BizAi.src,
+        link: "https://bizai.vercel.app/",
     },
     {
         title: "loopstudios",
         description:
             "Landing page for loopstudios. Immersive experiences that deliver. The leader in interactive VR",
         image: loopstudios.src,
+        link: "https://loopstudios.netlify.app/",
     },
     {
         title: "BoredTap",

@@ -1,9 +1,11 @@
 import { Project } from "@/interfaces/project";
 import Button from "@/components/ui/Button";
+import { useRouter } from "next/router";
 import ProjectCard from "@/components/pageSections/ProjectCard";
 import projects from "@/data/projects";
 
 export default function Projects() {
+    const router = useRouter();
     return (
         <section className="py-24">
             <div className="container mx-auto max-w-5xl flex flex-col md:grid md:grid-cols-[200px_1fr] gap-12 md:gap-16 md:items-start">
@@ -17,7 +19,11 @@ export default function Projects() {
                         ))}
                     </div>
                     <div className="flex justify-start">
-                        <Button variant="outline">
+                        <Button
+                            variant="outline"
+                            onClick={() => router.push("/projects")}
+                            className="hover:cursor-pointer"
+                        >
                             View full systems gallery
                         </Button>
                     </div>

@@ -38,7 +38,8 @@ export default function About() {
                         <img
                             src={centedited.src}
                             alt="Vincent Odume Portrait"
-                            className="w-full max-h-125 object-cover rounded bg-(--border) grayscale contrast-110"
+                            // className="w-full max-h-125 object-cover rounded bg-(--border) grayscale contrast-110"
+                            className="w-full object-cover rounded bg-(--border) grayscale hover:grayscale-0 contrast-110"
                         />
 
                         <div className="text-(--muted-foreground) space-y-4 max-w-170">
@@ -52,8 +53,8 @@ export default function About() {
                             </p>
                             <p>
                                 Over the past few years, I've worked across
-                                various domains—from fintech startups to
-                                healthcare platforms—building the
+                                various domains—from logistics startups to
+                                engaging gamified platforms—building the
                                 infrastructure that connects users to their
                                 data securely and efficiently.
                             </p>
@@ -86,21 +87,16 @@ export default function About() {
                                 </div>
                                 <div>
                                     <h3 className="text-base font-medium text-(--foreground)">
-                                        Senior Backend Engineer
+                                        Backend Developer
                                     </h3>
                                     <div className="text-sm text-(--primary) mb-2">
-                                        FinCore Systems
+                                        Logistics Systems
                                     </div>
                                     <p className="text-sm text-(--muted-foreground)">
-                                        Leading the backend architecture for
-                                        a high-volume payment gateway.
-                                        Redesigned the transaction
-                                        processing pipeline, moving from a
-                                        monolithic architecture to a
-                                        decoupled service model using
-                                        FastAPI and Celery. Improved system
-                                        throughput by 40% and reduced
-                                        latency during peak hours.
+                                        Building and maintaining the core
+                                        backend services that power a real-time
+                                        logistics platform used by thousands of
+                                        users across Africa.
                                     </p>
                                 </div>
                             </div>
@@ -148,7 +144,7 @@ export default function About() {
                                     <span className="px-3 py-1 border rounded text-sm bg-(--secondary) border-(--border)">
                                         Docker
                                     </span>
-                                    <span className="px-3 py-1 border rounded text-sm bg-(--secondary) border-(--border)">
+                                    {/* <span className="px-3 py-1 border rounded text-sm bg-(--secondary) border-(--border)">
                                         AWS
                                     </span>
                                     <span className="px-3 py-1 border rounded text-sm bg-(--secondary) border-(--border)">
@@ -156,7 +152,7 @@ export default function About() {
                                     </span>
                                     <span className="px-3 py-1 border rounded text-sm bg-(--secondary) border-(--border)">
                                         Nginx
-                                    </span>
+                                    </span> */}
                                 </div>
                             </div>
                         </div>
@@ -164,43 +160,13 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Contact CTA (matches desktop-about.html) */}
-            <section className="py-12 md:py-24 bg-(--secondary) border-t border-(--border)">
-                <div className="container mx-auto px-5 max-w-5xl">
-                    <div style={{ maxWidth: 600 }}>
-                        <h2 className="text-3xl font-medium leading-tight mb-6 text-(--foreground)">
-                            Let's build something exceptional.
-                        </h2>
-                        <p className="text-lg text-(--muted-foreground) mb-8">
-                            Got a wild idea, a startup brief, or simply want
-                            to say hi? I'm all ears — just maybe not the
-                            caffeine kind.
-                        </p>
-                        <div className="flex gap-4">
-                            <a
-                                href="#"
-                                className="inline-flex items-center justify-center px-6 py-3 rounded bg-(--foreground) text-(--primary-foreground) border border-(--foreground) text-sm font-medium"
-                            >
-                                Get in Touch
-                            </a>
-                            <a
-                                href="#"
-                                className="inline-flex items-center justify-center px-6 py-3 rounded bg-transparent text-(--foreground) border border-(--border) text-sm font-medium"
-                            >
-                                Access Project Portal
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Unpaid compliments (kept at bottom similar to original) */}
+            {/* Client Notes Section */}
             <section className="py-12">
                 <div className="container mx-auto px-5 max-w-5xl">
                     <div className="mt-8 pt-6 border-t border-dashed border-(--border) flex justify-center">
                         <div className="w-full max-w-4xl">
                             <h3 className="text-xs font-semibold uppercase tracking-wider mb-4 text-(--foreground) text-center">
-                                Unpaid Compliments
+                                Client Notes
                             </h3>
                             <ComplimentRotator
                                 compliments={unpaidCompliments}
