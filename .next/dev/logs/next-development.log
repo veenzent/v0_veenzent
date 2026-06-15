@@ -1,0 +1,188 @@
+[00:00:07.262] Server  LOG     ✓ Ready in 5.9s
+[00:00:22.911] Server  LOG     ○ Compiling / ...
+[00:00:27.095] Server  ERROR   `legacyBehavior` is deprecated and will be removed in a future release. A codemod is available to upgrade your components:
+
+npx @next/codemod@latest new-link .
+
+Learn more: https://nextjs.org/docs/app/building-your-application/upgrading/codemods#remove-a-tags-from-link-components
+[00:00:27.951] Server  WARN    ⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:29.175] Browser ERROR   `legacyBehavior` is deprecated and will be removed in a future release. A codemod is available to upgrade your components:
+
+npx @next/codemod@latest new-link .
+
+Learn more: https://nextjs.org/docs/app/building-your-application/upgrading/codemods#remove-a-tags-from-link-components
+[00:00:29.175] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <App pageProps={{}} Component={function Home} err={undefined} router={{sdc:{},sbc:{}, ...}}>
+      <Home>
+        <Layout>
+          <div className="geist_a72d...">
+            <div className="flex flex-...">
+              <Script>
+              <Header>
+                <header className="py-6 md:py-10">
+                  <div className="container ...">
+                    <div className="md:hidden ...">
+                      <a>
+                      <div className="flex gap-5">
+                        <a href="https://gi..." target="_blank" rel="noopener n..." className="flex items..." ...>
+                          <svg xmlns="http://www..." className="h-5 w-5" fill="none" viewBox="0 0 24 24" ...>
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
++                             d={"M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577\r\..."}
+-                             d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577   0-..."
+                            >
+                        ...
+                    <div>
+                    <div className="hidden md:...">
+                      <a>
+                      <nav>
+                      <div className="flex items...">
+                        <a href="https://gi..." target="_blank" rel="noopener n..." className="flex items...">
+                          <svg xmlns="http://www..." className="h-4 w-4" fill="none" viewBox="0 0 24 24" ...>
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
++                             d={"M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577\r\..."}
+-                             d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577   0-..."
+                            >
+                          ...
+                        ...
+              ...
+    ...
+
+[00:14:09.491] Server  WARN    ⚠ Cross origin request detected from 3c54-2605-59c1-1b88-ef10-65ed-57d6-cfcb-faa3.ngrok-free.app to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:14:11.698] Browser ERROR   `legacyBehavior` is deprecated and will be removed in a future release. A codemod is available to upgrade your components:
+
+npx @next/codemod@latest new-link .
+
+Learn more: https://nextjs.org/docs/app/building-your-application/upgrading/codemods#remove-a-tags-from-link-components
+[00:14:11.698] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <App pageProps={{}} Component={function Home} err={undefined} router={{sdc:{},sbc:{}, ...}}>
+      <Home>
+        <Layout>
+          <div className="geist_a72d...">
+            <div className="flex flex-...">
+              <Script>
+              <Header>
+                <header className="py-6 md:py-10">
+                  <div className="container ...">
+                    <div className="md:hidden ...">
+                      <a>
+                      <div className="flex gap-5">
+                        <a href="https://gi..." target="_blank" rel="noopener n..." className="flex items..." ...>
+                          <svg xmlns="http://www..." className="h-5 w-5" fill="none" viewBox="0 0 24 24" ...>
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
++                             d={"M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577\r\..."}
+-                             d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577   0-..."
+                            >
+                        ...
+                    <div>
+                    <div className="hidden md:...">
+                      <a>
+                      <nav>
+                      <div className="flex items...">
+                        <a href="https://gi..." target="_blank" rel="noopener n..." className="flex items...">
+                          <svg xmlns="http://www..." className="h-4 w-4" fill="none" viewBox="0 0 24 24" ...>
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
++                             d={"M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577\r\..."}
+-                             d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577   0-..."
+                            >
+                          ...
+                        ...
+              ...
+    ...
+
+[01:36:36.070] Browser ERROR   `legacyBehavior` is deprecated and will be removed in a future release. A codemod is available to upgrade your components:
+
+npx @next/codemod@latest new-link .
+
+Learn more: https://nextjs.org/docs/app/building-your-application/upgrading/codemods#remove-a-tags-from-link-components
+[01:36:36.070] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <App pageProps={{}} Component={function About} err={undefined} router={{sdc:{},sbc:{}, ...}}>
+      <About>
+        <Layout>
+          <div className="geist_a72d...">
+            <div className="flex flex-...">
+              <Script>
+              <Header>
+                <header className="py-6 md:py-10">
+                  <div className="container ...">
+                    <div className="md:hidden ...">
+                      <a>
+                      <div className="flex gap-5">
+                        <a href="https://gi..." target="_blank" rel="noopener n..." className="flex items..." ...>
+                          <svg xmlns="http://www..." className="h-5 w-5" fill="none" viewBox="0 0 24 24" ...>
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
++                             d={"M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577\r\..."}
+-                             d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577   0-..."
+                            >
+                        ...
+                    <div>
+                    <div className="hidden md:...">
+                      <a>
+                      <nav>
+                      <div className="flex items...">
+                        <a href="https://gi..." target="_blank" rel="noopener n..." className="flex items...">
+                          <svg xmlns="http://www..." className="h-4 w-4" fill="none" viewBox="0 0 24 24" ...>
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
++                             d={"M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577\r\..."}
+-                             d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577   0-..."
+                            >
+                          ...
+                        ...
+              ...
+    ...
+
