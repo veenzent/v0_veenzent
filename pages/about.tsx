@@ -83,7 +83,7 @@ export default function About() {
                         <div className="grid grid-cols-1 gap-8">
                             <div className="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-6 pb-6 border-b border-dashed border-(--border)">
                                 <div className="text-sm text-(--muted-foreground) pt-1">
-                                    2022 — Present
+                                    2023 — Present
                                 </div>
                                 <div>
                                     <h3 className="text-base font-medium text-(--foreground)">
