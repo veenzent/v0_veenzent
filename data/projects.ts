@@ -3,9 +3,17 @@ import litelink from "@/assets/LiteLink.png";
 import BizAi from "@/assets/BizzAi.png";
 import loopstudios from "@/assets/loopstudios.png";
 import boredtap from "@/assets/boredtap.png";
+import jennysWorld from "@/assets/jennys-world.png";
 
 
 export const projects: Project[] = [
+    {
+        title: "LiteLink",
+        description:
+            "a mobile-first luxury beauty e-commerce storefront built for browsing and buying premium personal care products like Perfumes, Skincare, Cosmetics, Deodorants, and Hair Care. Styled in blush pink, gold, and charcoal.",
+        image: jennysWorld.src,
+        link: "https://jennys-world.vercel.app/",
+    },
     {
         title: "LiteLink",
         description:
