@@ -8,7 +8,7 @@ import jennysWorld from "@/assets/jennys-world.png";
 
 export const projects: Project[] = [
     {
-        title: "LiteLink",
+        title: "Jenny's World",
         description:
             "a mobile-first luxury beauty e-commerce storefront built for browsing and buying premium personal care products like Perfumes, Skincare, Cosmetics, Deodorants, and Hair Care. Styled in blush pink, gold, and charcoal.",
         image: jennysWorld.src,
